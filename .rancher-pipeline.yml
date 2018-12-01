@@ -7,4 +7,9 @@ stages:
         java --version
         pwd
         ls
+- name: test2
+  steps:
+  - runScriptConfig:
+      image: java:8
+      shellScript: sleep 360
 timeout: 60
