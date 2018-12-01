@@ -1,0 +1,10 @@
+stages:
+- name: test1
+  steps:
+  - runScriptConfig:
+      image: java:8
+      shellScript: |-
+        java --version
+        pwd
+        ls
+timeout: 60
